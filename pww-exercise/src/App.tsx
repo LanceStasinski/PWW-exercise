@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 
-import Button from "./shared/Button";
+import MainNavigation from "./navigation/MainNavigation";
 
 function App() {
-  return <Button>BUTTON</Button>;
+  return <MainNavigation />
 }
 
 export default App;
