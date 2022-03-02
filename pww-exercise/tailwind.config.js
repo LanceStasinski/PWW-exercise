@@ -29,6 +29,15 @@ module.exports = {
         "Roboto-Condensed": ["Roboto-Condensed", "sans-serif"],
         "Roboto-Slab": ["Roboto Slab", "serif"],
       },
+      keyframes: {
+        "btn-hover": {
+          from: { "background-color": "#0074C1" },
+          to: { "background-color": "#225089" },
+        },
+      },
+      animation: {
+        "btn-hover": "btn-hover 300ms ease-out forwards",
+      },
     },
   },
   plugins: [],
