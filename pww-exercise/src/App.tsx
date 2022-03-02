@@ -1,8 +1,10 @@
 import React from "react";
 import "./App.css";
 
+import Button from "./shared/Button";
+
 function App() {
-  return <h1 className="font-Roboto-Slab text-tertiary-5">Hello world!</h1>;
+  return <Button>BUTTON</Button>;
 }
 
 export default App;
