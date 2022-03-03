@@ -14,8 +14,8 @@ const ServiceCardList: React.FC = () => {
     { image: lfiImag, title: "LEGISLATIVE FISCAL IMPACTS" },
   ];
   return (
-    <section className=" w-full  bg-gray-6">
-      <ul className="flex flex-row flex-wrap pt-10 pr-10 justify-center">
+    <section className=" w-full bg-gray-6 py-5 flex justify-center" >
+      <ul className="flex flex-row flex-wrap w-5/6 justify-center">
         {services.map((item, index) => (
           <ServiceCard
             title={item.title}

@@ -3,7 +3,7 @@ import React from "react";
 const ServiceCard: React.FC<{ image: string; title: string }> = (props) => {
   // a URL would be passed to href via props if there were real URLs to go to
   return (
-    <li className="ml-10 mb-10">
+    <li className="m-5">
       <a
         href="/"
         className="animate-card-mouse-exit hover:animate-card-mouse-enter w-60 h-60 flex flex-col justify-center items-center shadow-sm bg-white "

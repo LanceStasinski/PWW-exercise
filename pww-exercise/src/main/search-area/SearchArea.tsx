@@ -1,8 +1,8 @@
 import React from "react";
 
-import backgroundImage from "../assets/capitol.jpg";
-import Button from "../shared/Button";
-import searchIcon from '../assets/search-icon-white.svg'
+import backgroundImage from "../../assets/capitol.jpg";
+import Button from "../../shared/Button";
+import searchIcon from '../../assets/search-icon-white.svg'
 
 const SearchArea: React.FC = () => {
   return (

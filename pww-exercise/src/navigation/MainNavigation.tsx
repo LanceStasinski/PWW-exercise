@@ -18,7 +18,7 @@ const MainNavigation = () => {
   };
 
   return (
-    <header className="w-full h-28">
+    <header className="w-full h-28 border-b-8 border-b-primary-2">
       <nav className="h-full w-full flex bg-white justify-between">
         <HamburgerButton onClick={toggleMenuHandler} menuIsOpen={menuIsOpen} />
         <div className="flex h-full">
@@ -43,11 +43,11 @@ const MainNavigation = () => {
           </a>
 
           <div className="ml-4 h-full flex flex-col justify-center w-fit">
-            <h1 className="font-Roboto-Slab text-primary-3 hidden sm:block sm:text-sm xl:text-lg">
+            <h1 className="font-Roboto-Slab font-bold text-primary-2 hidden sm:block sm:text-sm xl:text-lg">
               SOUTH CAROLINA <br />
               REVENUE AND FISCAL AFFAIRS OFFICE
             </h1>
-            <h1 className="font-Roboto-Slab text-primary-3 text-sm ml-4 text-center sm:hidden">
+            <h1 className="font-Roboto-Slab text-primary- text-sm ml-4 text-center sm:hidden">
               South Carolina <br />
               RFA <br />
               OFFICE
