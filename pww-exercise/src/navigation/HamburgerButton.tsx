@@ -11,9 +11,8 @@ const HamburgerButton: React.FC<{
     >
       {!props.menuIsOpen && (
         <div className="w-1/2 flex flex-col justify-center">
-          <span className="bg-gray-7 h-1 w-full block my-1" />
-          <span className="bg-gray-7 h-1 w-full block my-1" />
-          <span className="bg-gray-7 h-1 w-full block my-1" />
+          {[1,2,3].map(item => <span key={`bar${item}`} className="bg-gray-7 h-1 w-full block my-1 rounded" /> )}
+          
           <div className="text-gray-7 text-xs tracking-widest">MENU</div>
         </div>
       )}

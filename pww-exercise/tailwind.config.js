@@ -38,6 +38,9 @@ module.exports = {
       animation: {
         "btn-hover": "btn-hover 300ms ease-out forwards",
       },
+      height: {
+        '93.33px' : "93.33px"
+      },
     },
   },
   plugins: [],
