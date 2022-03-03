@@ -3,6 +3,7 @@ import "./App.css";
 
 import MainNavigation from "./navigation/MainNavigation";
 import SearchArea from "./main/SearchArea";
+import ServiceCardList from "./main/service-cards/ServiceCardList";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <div className="h-2 bg-primary-3"></div>
         <main>
           <SearchArea />
+          <ServiceCardList />
         </main>
       </div>
     </div>

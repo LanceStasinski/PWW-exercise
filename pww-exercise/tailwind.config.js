@@ -34,12 +34,34 @@ module.exports = {
           from: { "background-color": "#0074C1" },
           to: { "background-color": "#225089" },
         },
+        "card-mouse-enter": {
+          from: {
+            "box-shadow": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+            transform: "scale(1)",
+          },
+          to: {
+            "box-shadow": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+            transform: "scale(1.02)",
+          }
+        },
+        "card-mouse-exit": {
+          from: {
+            "box-shadow": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+            transform: "scale(1.02)",
+          },
+          to: {
+            "box-shadow": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+            transform: "scale(1)",
+          }
+        },
       },
       animation: {
         "btn-hover": "btn-hover 300ms ease-out forwards",
+        "card-mouse-enter": "card-mouse-enter 200ms ease-out forwards",
+        "card-mouse-exit": "card-mouse-exit 200ms ease-out forwards"
       },
       height: {
-        '93.33px' : "93.33px"
+        "93.33px": "93.33px",
       },
     },
   },
