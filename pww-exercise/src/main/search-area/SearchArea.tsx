@@ -14,7 +14,7 @@ const SearchArea: React.FC = () => {
       ></img>
       <div className="absolute h-96 z-10 flex flex-col justify-center items-center">
         <div className=" w-5/6 sm:w-1/2">
-          <p className="text-gray-7 text-center font-Roboto-Slab font-light text-lg">
+          <p className="text-gray-7 text-center font-Roboto-Slab font-light text-xl">
             Providing independent research, analysis, and resources to
             facilitate informed policy decisions and administration of services
           </p>

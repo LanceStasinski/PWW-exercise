@@ -42,7 +42,7 @@ const PopularServices: React.FC = () => {
 
   return (
     <section className="">
-      <h2 className="border-b-8 border-b-primary-2 text-primary-2 text-2xl pb-4 mb-3 font-bold font-Open-Sans">
+      <h2 className="border-b-8 border-b-primary-2 text-primary-2 text-xl pb-4 mb-3 font-bold font-Open-Sans">
         POPULAR SERVICES AND LINKS
       </h2>
       <ul className="flex flex-row flex-wrap">
