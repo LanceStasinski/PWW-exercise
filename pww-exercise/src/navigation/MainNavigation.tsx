@@ -32,7 +32,7 @@ const MainNavigation = () => {
               <img
                 src={logoMask}
                 alt=""
-                className="absolute my-2.5 ml-2 sm:ml-6 z-10 h-93.33px"
+                className="absolute my-2.5 sm:ml-6 z-10 h-93.33px"
               />
             )}
             <img
@@ -47,7 +47,7 @@ const MainNavigation = () => {
               SOUTH CAROLINA <br />
               REVENUE AND FISCAL AFFAIRS OFFICE
             </h1>
-            <h1 className="font-Roboto-Slab text-primary-3 text-sm ml-4 sm:hidden">
+            <h1 className="font-Roboto-Slab text-primary-3 text-sm ml-4 text-center sm:hidden">
               South Carolina <br />
               RFA <br />
               OFFICE
@@ -61,7 +61,7 @@ const MainNavigation = () => {
         </div>
         <div className=" hidden lg:flex w-[48%] items-center justify-end">
           <ul className="flex">
-            {["ABOUT US", "EVENTS", "Boards & Committees"].map(
+            {["ABOUT US", "EVENTS", "BOARDS & COMMITTEES"].map(
               (item, index) => {
                 return (
                   <li className="mx-4 text-primary-3" key={`mainLink-${index}`}>
@@ -75,7 +75,6 @@ const MainNavigation = () => {
 
         <SearchButton />
       </nav>
-      <div className="h-2 bg-primary-3"></div>
     </header>
   );
 };
