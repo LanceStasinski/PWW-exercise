@@ -65,6 +65,9 @@ module.exports = {
       height: {
         "93.33px": "93.33px",
       },
+      screens: {
+        'custom-lg': '1400px'
+      }
     },
   },
   plugins: [],

@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import HamburgerButton from "./HamburgerButton";
 import logo from "../assets/RFA Logo Final.png";
 import logoMask from "../assets/Group 262.png";
-import SearchButton from "./SearchButton";
+import SearchButton from "./search/SearchButton";
 import Menu from "./menu/Menu";
+import SearchBar from "./search/SearchBar";
 
 const MainNavigation = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [logoIsHovered, setLogoIsHovered] = useState(false);
+  const [searchIsOpen, setSearchIsOpen] = useState(false);
 
   const toggleMenuHandler = () => {
     setMenuIsOpen((prevState) => !prevState);
@@ -16,6 +18,10 @@ const MainNavigation = () => {
 
   const toggleLogo = () => {
     setLogoIsHovered((prevState) => !prevState);
+  };
+
+  const toggleSearchHandler = () => {
+    setSearchIsOpen((prevState) => !prevState);
   };
 
   return (
@@ -86,10 +92,14 @@ const MainNavigation = () => {
               )}
             </ul>
           </div>
-          <SearchButton />
+            <SearchButton
+              searchIsOpen={searchIsOpen}
+              toggleSearch={toggleSearchHandler}
+            />
+            <SearchBar show={searchIsOpen} />
         </nav>
       </header>
-      <Menu show={menuIsOpen} toggleMenu={toggleMenuHandler}/>
+      <Menu show={menuIsOpen} toggleMenu={toggleMenuHandler} />
     </React.Fragment>
   );
 };
