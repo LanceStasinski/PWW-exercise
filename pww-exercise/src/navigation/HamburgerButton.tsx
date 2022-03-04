@@ -14,17 +14,17 @@ const HamburgerButton: React.FC<{
           {[1, 2, 3].map((item) => (
             <span
               key={`bar${item}`}
-              className="bg-gray-7 h-1 w-full block my-1"
+              className="bg-gray-8 h-1 w-full block my-1"
             />
           ))}
 
-          <div className="text-gray-7 text-xs tracking-widest">MENU</div>
+          <div className="text-gray-8 text-xs tracking-widest">MENU</div>
         </div>
       )}
       {props.menuIsOpen && (
         <div className="w-1/2 flex flex-col justify-center">
-          <span className="before:relative before:top-0.5 before:w-full before:rotate-45 before:h-1 before:block before:bg-gray-7 after:relative after:bottom-0.5 after:w-full after:-rotate-45 after:h-1 after:block after:bg-gray-7"></span>
-          <div className="text-gray-7 text-xs tracking-widest mt-4 -mb-3">
+          <span className="before:relative before:top-0.5 before:w-full before:rotate-45 before:h-1 before:block before:bg-gray-8 after:relative after:bottom-0.5 after:w-full after:-rotate-45 after:h-1 after:block after:bg-gray-8"></span>
+          <div className="text-gray-8 text-xs tracking-widest mt-4 -mb-3">
             CLOSE
           </div>
         </div>
