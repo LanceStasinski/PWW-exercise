@@ -18,7 +18,7 @@ const MainNavigation = () => {
   };
 
   return (
-    <header className="w-full h-28 border-b-8 border-b-primary-2">
+    <header id='header' className="w-full h-28 border-b-8 border-b-primary-2">
       <nav className="h-full w-full flex bg-white justify-between">
         <HamburgerButton onClick={toggleMenuHandler} menuIsOpen={menuIsOpen} />
         <div className="flex h-full">

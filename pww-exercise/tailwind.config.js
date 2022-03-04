@@ -24,6 +24,7 @@ module.exports = {
         "gray-6": "#CCCCCC",
         "gray-7": "#E1E5EA",
         "gray-8": "#F3F6F9",
+        'faded-blue': "rgba(147, 164, 189, 0.6)"
       },
       fontFamily: {
         "Open-Sans": ["Open Sans", "sans-serif"],

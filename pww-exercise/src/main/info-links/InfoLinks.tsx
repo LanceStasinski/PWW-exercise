@@ -3,6 +3,7 @@ import React from "react";
 import Calendar from "./calendar/Calendar";
 import PopularServices from "./PopularLinks";
 import RecentUpdates from "./recent-updates/RecentUpdates";
+import ToTopButton from "../../shared/ToTopButton";
 
 const InfoLinks: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const InfoLinks: React.FC = () => {
           <RecentUpdates />
           <Calendar />
         </div>
+        <ToTopButton />
       </div>
     </div>
   );

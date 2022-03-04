@@ -70,7 +70,7 @@ const Event: React.FC<{
         >
           {props.tag}
         </div>}
-        <div className="flex flex-col space-y-3">
+        <div className="flex flex-col space-y-2">
         <h4 className="text-primary-1 text-lg font-Open-Sans font-bold">{props.title}</h4>
         <div className="flex flex-row">
           <img src={locationIcon} alt="location icon" className="mr-2 mt-1 h-1/2"/>
