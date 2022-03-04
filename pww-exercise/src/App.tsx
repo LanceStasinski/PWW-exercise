@@ -5,6 +5,7 @@ import MainNavigation from "./navigation/MainNavigation";
 import SearchArea from "./main/search-area/SearchArea";
 import ServiceCardList from "./main/service-cards/ServiceCardList";
 import InfoLinks from "./main/info-links/InfoLinks";
+import Footer from "./footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <ServiceCardList />
           <InfoLinks />
         </main>
+        <Footer />
       </div>
     </div>
   );
