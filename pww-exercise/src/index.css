@@ -8,3 +8,26 @@
     @apply italic
   }
 }
+
+.slide-in-down-enter {
+  transform-origin: top;
+  transform:scaleY(0);
+}
+
+.slide-in-down-enter-active {
+  transform: scaleY(1);
+  opacity: 1;
+  transition: all 300ms;
+}
+
+.slide-in-down-exit {
+  transform-origin: top;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.slide-in-down-exit-active {
+  transform: scaleY(0);
+  opacity: 0;
+  transition: all 300ms;
+}
