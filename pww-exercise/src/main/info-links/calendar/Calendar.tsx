@@ -80,9 +80,12 @@ const DUMMY_EVENTS = [
 const Calendar: React.FC = () => {
   const lastIndex = DUMMY_EVENTS.length - 1;
   return (
-    <aside className="">
+    <section data-testid="calendar-section">
       <StyledH3>Calendar of Events</StyledH3>
-      <ul className="mt-8 mb-10 flex flex-col space-y-5">
+      <ul
+        data-testid="calendar-list"
+        className="mt-8 mb-10 flex flex-col space-y-5"
+      >
         {DUMMY_EVENTS.map((item, index) => (
           <Event
             lastItem={index === lastIndex}
@@ -97,7 +100,7 @@ const Calendar: React.FC = () => {
         ))}
       </ul>
       <Button>VIEW ALL EVENTS</Button>
-    </aside>
+    </section>
   );
 };
 
