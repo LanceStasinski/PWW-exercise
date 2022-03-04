@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 import Calendar from "./Calendar";
 
 describe("Calendar component", () => {
-  test("renders aside element", () => {
+  test("renders section and list elements", () => {
     render(<Calendar />);
     const calendarSection = screen.getByTestId("calendar-section");
     const calendarList = screen.getByTestId("calendar-list");
