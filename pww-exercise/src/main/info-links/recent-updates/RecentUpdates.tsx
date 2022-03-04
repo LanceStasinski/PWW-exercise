@@ -49,7 +49,7 @@ const DUMMY_UPDATES = [
     url: "/",
   },
   {
-    title: "November 2019 Genreal Fund Revenue Digest",
+    title: "November 2019 General Fund Revenue Digest",
     date: {
       month: "Jan",
       day: 2,
