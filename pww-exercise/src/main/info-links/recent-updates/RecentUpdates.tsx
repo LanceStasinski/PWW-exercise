@@ -49,7 +49,7 @@ const DUMMY_UPDATES = [
     url: "/",
   },
   {
-    title: "November 2019 Genreal FUnd Revenue Digest",
+    title: "November 2019 Genreal Fund Revenue Digest",
     date: {
       month: "Jan",
       day: 2,
@@ -62,8 +62,8 @@ const DUMMY_UPDATES = [
 
 const RecentUpdates: React.FC = () => {
   return (
-    <aside className="pr-6">
-      <StyledH3 />
+    <aside className="mb-24 md:mb-0 md:pr-6 ">
+      <StyledH3>Recent Updates</StyledH3>
       <ul className="mb-8">
         {DUMMY_UPDATES.map((item, index) => (
           <RecentItem
