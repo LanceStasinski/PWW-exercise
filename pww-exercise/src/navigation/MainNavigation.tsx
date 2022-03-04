@@ -82,7 +82,7 @@ const MainNavigation = () => {
                 (item, index) => {
                   return (
                     <li
-                      className="mx-4 text-primary-3"
+                      className="mx-4 text-primary-3 font-medium"
                       key={`mainLink-${index}`}
                     >
                       <a href="/">{item}</a>
