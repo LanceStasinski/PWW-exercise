@@ -60,9 +60,14 @@ const DUMMY_UPDATES = [
   },
 ];
 
+// Renders a list of recent updates - these update items would normally come from
+// a GET request sent on page load via the useEffect hook
 const RecentUpdates: React.FC = () => {
   return (
-    <aside className="mb-24 md:mb-0 md:pr-6 ">
+    <section
+      data-testid="recent-updates-section"
+      className="mb-24 md:mb-0 md:pr-6 "
+    >
       <StyledH3>Recent Updates</StyledH3>
       <ul className="mb-8">
         {DUMMY_UPDATES.map((item, index) => (
@@ -77,7 +82,7 @@ const RecentUpdates: React.FC = () => {
         ))}
       </ul>
       <Button>VIEW MORE</Button>
-    </aside>
+    </section>
   );
 };
 
