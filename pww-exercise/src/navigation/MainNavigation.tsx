@@ -47,12 +47,14 @@ const MainNavigation = () => {
             >
               {logoIsHovered && (
                 <img
+                  data-testid="mask"
                   src={logoMask}
                   alt=""
                   className="absolute my-2.5 sm:ml-6 z-10 h-93.33px"
                 />
               )}
               <img
+                data-testid="logo"
                 src={logo}
                 alt="South Carolina Revenue and Fiscal Affairs Logo"
                 className="h-5/6 my-2.5 ml-3"
@@ -69,7 +71,7 @@ const MainNavigation = () => {
                 RFA <br />
                 OFFICE
               </h1>
-              <p>
+              <p data-testid="slogan">
                 <em className="font-Roboto-Condensed hidden sm:block sm:text-xs md:text-sm text-primary-6">
                   Transforming data into solutions for South Carolina
                 </em>
@@ -92,11 +94,11 @@ const MainNavigation = () => {
               )}
             </ul>
           </div>
-            <SearchButton
-              searchIsOpen={searchIsOpen}
-              onToggleSearch={toggleSearchHandler}
-            />
-            <SearchBar show={searchIsOpen} />
+          <SearchButton
+            searchIsOpen={searchIsOpen}
+            onToggleSearch={toggleSearchHandler}
+          />
+          <SearchBar show={searchIsOpen} />
         </nav>
       </header>
       <Menu show={menuIsOpen} onToggleMenu={toggleMenuHandler} />
