@@ -94,7 +94,7 @@ const MainNavigation = () => {
           </div>
             <SearchButton
               searchIsOpen={searchIsOpen}
-              toggleSearch={toggleSearchHandler}
+              onToggleSearch={toggleSearchHandler}
             />
             <SearchBar show={searchIsOpen} />
         </nav>
