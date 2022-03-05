@@ -22,4 +22,10 @@ describe("Menu component", () => {
     expect(linkCategories.length).toEqual(4);
     expect(links.length).toEqual(23);
   });
+  test("does not render a menu if show is false", () => {
+    render(<Menu show={false} onToggleMenu={() => {}} />);
+    const navElement = screen.queryByRole("navigation");
+
+    expect(navElement).not.toBeInTheDocument();
+  });
 });

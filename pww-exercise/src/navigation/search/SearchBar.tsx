@@ -3,6 +3,7 @@ import { CSSTransition } from "react-transition-group";
 
 import Button from "../../shared/Button";
 
+// renders a dropdown search bar
 const SearchBar: React.FC<{ show: boolean }> = (props) => {
   const nodeRef = useRef(null);
 
@@ -16,10 +17,12 @@ const SearchBar: React.FC<{ show: boolean }> = (props) => {
       nodeRef={nodeRef}
     >
       <form
+        data-testid='search-form'
         ref={nodeRef}
         className="flex p-3 z-[100] rounded-sm absolute top-[4.4rem] bg-primary-5 right-0 sm:right-[1.75rem] custom-lg:right-[calc(((100vw-1400px)/2)+19px)]"
       >
         <input
+          data-testid='search-input'
           className="mr-2 px-2 w-[9rem] sm:w-[20rem] focus:outline-none"
           type="search"
           placeholder="Enter search term"
