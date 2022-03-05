@@ -1,5 +1,6 @@
 import React from "react";
 
+// Renders a list of links to popular services
 const PopularServices: React.FC = () => {
   const links = [
     {

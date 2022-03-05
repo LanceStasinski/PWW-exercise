@@ -1,7 +1,7 @@
 import React from "react";
 
 import Calendar from "./calendar/Calendar";
-import PopularServices from "./PopularLinks";
+import PopularServices from "./PopularServices";
 import RecentUpdates from "./recent-updates/RecentUpdates";
 import ToTopButton from "../../shared/ToTopButton";
 
