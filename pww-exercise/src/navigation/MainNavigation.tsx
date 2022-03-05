@@ -99,7 +99,7 @@ const MainNavigation = () => {
             <SearchBar show={searchIsOpen} />
         </nav>
       </header>
-      <Menu show={menuIsOpen} toggleMenu={toggleMenuHandler} />
+      <Menu show={menuIsOpen} onToggleMenu={toggleMenuHandler} />
     </React.Fragment>
   );
 };
