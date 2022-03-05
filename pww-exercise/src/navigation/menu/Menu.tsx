@@ -195,10 +195,10 @@ const Menu: React.FC<{ show: boolean; onToggleMenu: () => void }> = (props) => {
                 {
                   // renders list of links for the category
                 }
-                <ul className="pt-4">
+                <ul className="pt-4 flex flex-col space-y-3">
                   {item.linksList.map((link, linkIndex) => {
                     return (
-                      <li data-testid="link" key={`link${linkIndex}`}>
+                      <li data-testid="link" className="leading-5" key={`link${linkIndex}`}>
                         <a className="text-gray-4" href={link.url}>
                           {link.name}
                         </a>
