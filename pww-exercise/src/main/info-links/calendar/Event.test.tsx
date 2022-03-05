@@ -22,7 +22,7 @@ describe("Event Component", () => {
       day: 22,
     },
   };
-  test("renders 3 image, 1 tag, 1 link, 1 time, 1 div date block, and 1 div separator elements", () => {
+  test("renders 3 image, 1 tag, 1 link, 1 time, and 1 div date block elements", () => {
     render(
       <Event
         lastItem={false}
@@ -34,18 +34,16 @@ describe("Event Component", () => {
         date={event.date}
       />
     );
-    const imageElements = screen.getAllByRole('img');
-    const timeElement = screen.getByTestId('time');
-    const dateElement = screen.getByTestId('date-block')
-    const tagElement = screen.getByTestId('event-tag');
-    const linkElement = screen.getByRole('link');
-    const separatorElement = screen.getByTestId('separator')
+    const imageElements = screen.getAllByRole("img");
+    const timeElement = screen.getByTestId("time");
+    const dateElement = screen.getByTestId("date-block");
+    const tagElement = screen.getByTestId("event-tag");
+    const linkElement = screen.getByRole("link");
 
     expect(imageElements.length).toEqual(3);
     expect(timeElement).toBeInTheDocument();
     expect(dateElement).toBeInTheDocument();
     expect(tagElement).toBeInTheDocument();
     expect(linkElement).toBeInTheDocument();
-    expect(separatorElement).toBeInTheDocument();
   });
 });

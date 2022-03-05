@@ -2,6 +2,7 @@ import React from "react";
 
 import fadedLogo from "../assets/Group 262.png";
 
+// Renders a footer with the appropriate links and addresses
 const Footer: React.FC = () => {
   const links = [
     {
@@ -67,7 +68,7 @@ const Footer: React.FC = () => {
           return (
             <li key={`address${index}`}>
               <h3 className="text-gray-5 tracking-wider font-medium">{item.building}</h3>
-              <p className="leading-5">
+              <p data-testid='address' className="leading-5">
                 <span>{item.address}</span>
                 <br />
                 <span>{item.city}</span>

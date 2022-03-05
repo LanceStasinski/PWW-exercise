@@ -5,6 +5,7 @@ import locationIcon from "../../../assets/location.svg";
 import clockIcon from "../../../assets/clock.svg";
 import phoneIcon from "../../../assets/phone.svg";
 
+// Renders a recent event list item given props describing the event
 const Event: React.FC<{
   lastItem: boolean;
   tag?: string;
@@ -48,7 +49,13 @@ const Event: React.FC<{
     }
   };
   return (
-    <li className="flex flex-col md:grid md:grid-cols-[12%_88%] md:gap-4">
+    <li
+      className="flex flex-col pb-4 md:grid md:grid-cols-[12%_88%] md:gap-4"
+      style={{ borderBottom: props.lastItem ? "none" : "1pt solid #E1E5EA" }}
+    >
+      {
+        // render the month-day block
+      }
       <div
         data-testid="date-block"
         className="flex flex-row mb-3 md:mb-0 md:flex-col"
@@ -65,6 +72,9 @@ const Event: React.FC<{
           <div className="font-medium md:text-2xl p-0">{props.date.day}</div>
         </time>
       </div>
+      {
+        // render the main text of the event
+      }
       <div className="flex flex-col">
         {props.tag && (
           <div
@@ -107,12 +117,6 @@ const Event: React.FC<{
               {`(${props.phone.areaCode}) ${props.phone.prefix}-${props.phone.suffix}`}
             </a>
           </div>
-          {!props.lastItem && (
-            <div
-              data-testid="separator"
-              className="h-[2px] w-full mt-2 bg-gray-7"
-            />
-          )}
         </div>
       </div>
     </li>

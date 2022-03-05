@@ -9,7 +9,7 @@ describe("Footer component", () => {
     const imageElements = screen.getAllByRole("img");
     const linkElements = screen.getAllByRole("link");
     const headerElements = screen.getAllByRole("heading");
-    const pElements = screen.getAllByRole('paragraph')
+    const pElements = screen.getAllByTestId('address')
     expect(imageElements.length).toEqual(1);
     expect(linkElements.length).toEqual(6);
     expect(headerElements.length).toEqual(4);

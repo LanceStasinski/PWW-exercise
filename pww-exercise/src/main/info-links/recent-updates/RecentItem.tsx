@@ -15,6 +15,7 @@ export const MONTHS: { [key: string]: string } = {
   dec: "12",
 };
 
+// Renders a recent update list item given props describing the update
 const RecentItem: React.FC<{
   title: string;
   text?: string;
@@ -27,18 +28,34 @@ const RecentItem: React.FC<{
   url: string;
 }> = (props) => {
   return (
-    <div className="mt-6 flex flex-col space-y-1">
-      <a href={props.url}><h2 className="text-primary-5 text-lg underline leading-5 font-medium">{props.title}</h2></a>
-      <p className="text-gray-2">{props.text}</p>
+    <li className="mt-6 flex flex-col space-y-1">
+      <a href={props.url}>
+        <h4 className="text-primary-5 text-lg underline leading-5 font-medium">
+          {props.title}
+        </h4>
+      </a>
+      {props.text && (
+        <p data-testid="update-p" className="text-gray-2">
+          {props.text}
+        </p>
+      )}
       <div className="flex text-sm flex-wrap">
         <div className="text-gray-3 font-medium mr-1">Published:</div>
         <time
+          data-testid="publish-date"
           className="text-gray-4 mr-2"
-          dateTime={`${props.date.year}-${MONTHS[props.date.month.toLowerCase()]}-${props.date.day}`}
+          dateTime={`${props.date.year}-${
+            MONTHS[props.date.month.toLowerCase()]
+          }-${props.date.day}`}
         >{`${props.date.month} ${props.date.day}, ${props.date.year}`}</time>
-        <div className="text-gray-8 bg-gray-4 rounded-sm p-1 text-xs font-medium">{props.tag}</div>
+        <div
+          data-testid="update-tag"
+          className="text-gray-8 bg-gray-4 rounded-sm p-1 text-xs font-medium"
+        >
+          {props.tag}
+        </div>
       </div>
-    </div>
+    </li>
   );
 };
 

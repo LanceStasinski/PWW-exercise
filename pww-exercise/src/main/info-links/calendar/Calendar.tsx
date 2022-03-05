@@ -77,6 +77,8 @@ const DUMMY_EVENTS = [
   },
 ];
 
+// Renders a list of recent updates - these updates would most likely come from a GET request
+// placed inside of a useEffect hook
 const Calendar: React.FC = () => {
   const lastIndex = DUMMY_EVENTS.length - 1;
   return (
