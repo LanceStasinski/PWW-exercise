@@ -71,9 +71,9 @@ const MainNavigation = () => {
               // render heading and slogan
             }
             <div className="ml-5 h-full flex flex-col justify-center w-fit">
-              <h1 className="font-Roboto-Slab font-bold text-primary-2 hidden sm:block sm:text-sm xl:text-lg">
-                SOUTH CAROLINA <br />
-                REVENUE AND FISCAL AFFAIRS OFFICE
+              <h1 className="font-Roboto-Slab font-bold text-primary-2 leading-6 hidden sm:block sm:text-sm xl:text-lg xl:leading-6">
+                <span>SOUTH CAROLINA</span> <br />
+                <span>REVENUE AND FISCAL AFFAIRS OFFICE</span>
               </h1>
               <h1 className="font-Roboto-Slab text-primary-2 text-center text-sm font-bold ml-4 sm:hidden">
                 South Carolina <br />
