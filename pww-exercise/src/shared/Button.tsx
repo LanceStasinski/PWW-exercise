@@ -1,5 +1,6 @@
 import React from "react";
 
+// render a reusable styled button component
 const Button: React.FC<{
   disabled?: boolean;
   className?: string;

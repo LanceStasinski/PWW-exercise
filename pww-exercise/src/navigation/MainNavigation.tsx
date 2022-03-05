@@ -7,6 +7,7 @@ import SearchButton from "./search/SearchButton";
 import Menu from "./menu/Menu";
 import SearchBar from "./search/SearchBar";
 
+// renders the main navigation
 const MainNavigation = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [logoIsHovered, setLogoIsHovered] = useState(false);
@@ -33,11 +34,17 @@ const MainNavigation = () => {
           borderBottom: menuIsOpen ? "4px solid #F3F6F9" : "8px solid #1B3A61",
         }}
       >
+        {
+          // render hamburger button
+        }
         <nav className="h-full w-full flex bg-white justify-between">
           <HamburgerButton
             onClick={toggleMenuHandler}
             menuIsOpen={menuIsOpen}
           />
+          {
+            // render logo as a link (presumably to home), add mask if image is hovered
+          }
           <div className="flex h-full">
             <a
               href="/"
@@ -60,7 +67,9 @@ const MainNavigation = () => {
                 className="h-5/6 my-2.5 ml-3"
               />
             </a>
-
+            {
+              // render heading and slogan
+            }
             <div className="ml-5 h-full flex flex-col justify-center w-fit">
               <h1 className="font-Roboto-Slab font-bold text-primary-2 hidden sm:block sm:text-sm xl:text-lg">
                 SOUTH CAROLINA <br />
@@ -78,6 +87,9 @@ const MainNavigation = () => {
               </p>
             </div>
           </div>
+          {
+            // render nav links
+          }
           <div className=" hidden lg:flex w-[48%] items-center justify-end">
             <ul className="flex">
               {["ABOUT US", "EVENTS", "BOARDS & COMMITTEES"].map(
@@ -94,6 +106,9 @@ const MainNavigation = () => {
               )}
             </ul>
           </div>
+          {
+            // render search button and search bar
+          }
           <SearchButton
             searchIsOpen={searchIsOpen}
             onToggleSearch={toggleSearchHandler}
@@ -101,6 +116,9 @@ const MainNavigation = () => {
           <SearchBar show={searchIsOpen} />
         </nav>
       </header>
+      {
+        // render menu if open
+      }
       <Menu show={menuIsOpen} onToggleMenu={toggleMenuHandler} />
     </React.Fragment>
   );
