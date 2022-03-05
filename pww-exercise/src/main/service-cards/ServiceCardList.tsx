@@ -8,10 +8,10 @@ import ServiceCard from "./ServiceCard";
 
 const ServiceCardList: React.FC = () => {
   const services = [
-    { image: dataResearchImg, title: "DATA & RESEARCH" },
-    { image: geogImg, title: "GEOGRAPHY & MAPPING" },
-    { image: programsImg, title: "PROGRAMS & SERVICES" },
-    { image: lfiImag, title: "LEGISLATIVE FISCAL IMPACTS" },
+    { image: dataResearchImg, title: "DATA & RESEARCH", url: '/' },
+    { image: geogImg, title: "GEOGRAPHY & MAPPING", url: '/' },
+    { image: programsImg, title: "PROGRAMS & SERVICES", url: '/' },
+    { image: lfiImag, title: "LEGISLATIVE FISCAL IMPACTS", url: '/' },
   ];
   return (
     <section className=" w-full bg-gray-7 py-5 flex justify-center" >
@@ -21,6 +21,7 @@ const ServiceCardList: React.FC = () => {
             title={item.title}
             image={item.image}
             key={`serviceCard${index}`}
+            url={item.url}
           />
         ))}
       </ul>
