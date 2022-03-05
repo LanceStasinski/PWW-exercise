@@ -6,6 +6,7 @@ import programsImg from "../../assets/Programs-Icon.svg";
 import lfiImag from "../../assets/Legislative-Icon.svg";
 import ServiceCard from "./ServiceCard";
 
+// renders a section with a list of service cards
 const ServiceCardList: React.FC = () => {
   const services = [
     { image: dataResearchImg, title: "DATA & RESEARCH", url: '/' },
