@@ -1,6 +1,6 @@
 # PWW-exercise
 
-A project built to demonstrate my ability to convert a design artifact into HTML and CSS.
+A project built to demonstrate my ability to convert a design artifact into a functional web page.
 
 ## Table of Contents
 
@@ -45,7 +45,7 @@ GitHub (currently private repo): [https://github.com/LanceStasinski/PWW-exercise
 - Mobile-first CSS paradigm implemented with media queries, Flexbox, and Grid
 - Renders drop down animations with react-transition-group
 - Uses fonts (Open Sans, Roboto Condensed, and Roboto Slab) from the Google Fonts API
-- Uses icons SVGs from iconmonstr
+- Uses icon SVGs from iconmonstr
 - Uses a file structure that separates the main sections of the page
 - Unit testing with Jest and React Testing Library
 
@@ -79,9 +79,9 @@ First, `cd` into the `pww-exercise` directory.
 
 ## Challenges
 
-This was my first time using Tailwind CSS and it took a little while to get used to; however, I think this will be my go-to CSS framework for now on. It cuts down on the number of files I'm working with and it's nice to have css and JSX code all in the same place.
+This was my first time using Tailwind CSS and it took a little while to get used to; however, I think this will be my go-to CSS framework for now on. It cuts down on the number of files I'm working with, and it's nice to have css and JSX code all in the same place.
 
-Building the web page from the style guide was challenging when it came to implementing responsive design. Some styles were not maintainable at smaller screen sizes. For example, the South Carolina RFA logo does not fit well in the header on mobile screen sizes, and the same goes for the lengthy title and slogan. I decided to address this issue by removing the logo and shortening the header text for mobile screen widths. I also chose to only display the additional links (which are also available in the menu drop down) for larger screen sizes. I thought the navigation search bar was important so I kept it for all screen sizes. The rest of the page was relatively straightforward to design responsive layouts for, though I did need to take some creative liberties with the calendar section.
+Building the web page from the style guide was challenging when it came to implementing responsive design. Some styles were not maintainable at smaller screen sizes. For example, the South Carolina RFA logo does not fit well in the header on mobile screen sizes, and the same goes for the lengthy title and slogan. I decided to address this issue by removing the logo and shortening the heading text for mobile screen widths. I also chose to only display the additional links (which are also available in the menu drop down) for larger screen sizes. I thought the navigation search bar was important so I kept it for all screen sizes. The rest of the page was relatively straightforward to design responsive layouts for, though I did need to take some creative liberties with the calendar section.
 
 Some other minor challenges were:
 
@@ -91,7 +91,7 @@ Some other minor challenges were:
 
 ## Alternatives
 
-There are many libraries to construct a web page with, but I chose to use React due to my confortability with the library. I could have also used a different CSS setup (plain CSS, CSS modules, or styled-components), but I chose to use Tailwind CSS because I wanted to learn the framework and I liked how it reduced the file size and number of files. Finally, I could have created the icons using CSS but it was more convenient to download SVGs, but this does slightly increase the size of the assets folder loaded by the browser.
+There are many libraries to construct a web page with, but I chose to use React due to my confortability with the library. I could have also used a different CSS setup (plain CSS, CSS modules, or styled-components), but I chose to use Tailwind CSS because I wanted to learn the framework and I liked how it reduced the file size and number of files. Finally, I could have created the icons using CSS, but it was more convenient to download SVGs, but this does slightly increase the size of the assets folder loaded by the browser.
 
 ## Time-Breakdown
 
@@ -121,3 +121,5 @@ I would like to thank the following:
 
 - Kevin Ferguson from Portalnd Web Works for giving me the opportunity to complete this exercise and for providing the necessary assets
 - [tailwindcss](https://tailwindcss.com/) for providing great documentation that allowed me learn the Tailwind framework relatively easily
+- [iconmonstr](https://iconmonstr.com/) for providing free-to-use icons
+- [GoogleFonts](https://fonts.google.com/) for providing access to the necessary fonts to complete this exercise
