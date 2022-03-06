@@ -37,7 +37,7 @@ const MainNavigation = () => {
         {
           // render hamburger button
         }
-        <nav className="h-full w-full flex bg-white justify-between">
+        <nav aria-labelledby="primary-navigation" className="h-full w-full flex bg-white justify-between">
           <HamburgerButton
             onClick={toggleMenuHandler}
             menuIsOpen={menuIsOpen}

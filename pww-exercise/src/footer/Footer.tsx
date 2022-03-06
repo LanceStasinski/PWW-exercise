@@ -49,6 +49,9 @@ const Footer: React.FC = () => {
   ];
   return (
     <footer className="p-10 text-gray-7 bg-primary-2 sm:pb-0 sm:grid sm:grid-cols-2 sm:gap-2 md:grid md:grid-cols-[35%_30%_35%] md:px-20">
+      {
+        // Heading and logo
+      }
       <div className="flex flex-col mb-10">
         <h2 className="text-gray-8 font-Open-Sans font-bold mb-6">
           South Carolina <br />
@@ -56,19 +59,27 @@ const Footer: React.FC = () => {
         </h2>
         <img className="w-36" src={fadedLogo} alt="South Carolina RFA Logo" />
       </div>
-
+      {
+        // links
+      }
       <ul className="flex flex-col space-y-3 mb-10">
         {links.map((item, index) => (
-          <li key={`siteLinks${index}`}><a href={item.url}>{item.label}</a></li>
+          <li key={`siteLinks${index}`}>
+            <a href={item.url}>{item.label}</a>
+          </li>
         ))}
       </ul>
-
+      {
+        // addresses
+      }
       <ul className="flex flex-col space-y-5 mb-10">
         {addresses.map((item, index) => {
           return (
             <li key={`address${index}`}>
-              <h3 className="text-gray-5 tracking-wider font-medium">{item.building}</h3>
-              <p data-testid='address' className="leading-5">
+              <h3 className="text-gray-5 tracking-wider font-medium">
+                {item.building}
+              </h3>
+              <p data-testid="address" className="leading-5">
                 <span>{item.address}</span>
                 <br />
                 <span>{item.city}</span>
