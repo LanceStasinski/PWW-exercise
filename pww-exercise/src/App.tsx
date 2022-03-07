@@ -12,7 +12,7 @@ function App() {
     <div className="flex flex-col items-center">
       <div className="max-w-[1400px]">
         <MainNavigation />
-        <main>
+        <main role="main">
           <SearchArea />
           <ServiceCardList />
           <InfoLinks />

@@ -156,6 +156,7 @@ const Menu: React.FC<{ show: boolean; onToggleMenu: () => void }> = (props) => {
         nodeRef={nodeRef}
       >
         <nav
+          role="navigation"
           aria-labelledby="menu-navigation"
           ref={nodeRef}
           className="absolute max-w-[1400px] w-[100vw] top-28 z-50 border-b-primary-2 border-b-8 flex flex-col sm:grid sm:grid-cols-[20%_1fr]"
@@ -199,7 +200,11 @@ const Menu: React.FC<{ show: boolean; onToggleMenu: () => void }> = (props) => {
                 <ul className="pt-4 flex flex-col space-y-3">
                   {item.linksList.map((link, linkIndex) => {
                     return (
-                      <li data-testid="link" className="leading-5 max-w-[90%]" key={`link${linkIndex}`}>
+                      <li
+                        data-testid="link"
+                        className="leading-5 max-w-[90%]"
+                        key={`link${linkIndex}`}
+                      >
                         <a className="text-gray-4" href={link.url}>
                           {link.name}
                         </a>

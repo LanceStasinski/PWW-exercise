@@ -31,6 +31,7 @@ const SearchArea: React.FC = () => {
               Search rfa.sc.gov
             </label>
             <input
+              role="search"
               id="main-search"
               name="main-search"
               className="w-full mb-4 focus:outline-1 focus:outline-gray-2 sm:w-3/4 sm:mr-2 sm:mb-0 p-3 placeholder-italic "

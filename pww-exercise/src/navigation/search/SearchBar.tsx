@@ -25,6 +25,7 @@ const SearchBar: React.FC<{ show: boolean }> = (props) => {
           Search
         </label>
         <input
+          role="search"
           id="nav-search"
           name="nav-search"
           data-testid="search-input"
