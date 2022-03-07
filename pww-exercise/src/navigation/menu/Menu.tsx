@@ -185,7 +185,7 @@ const Menu: React.FC<{ show: boolean; onToggleMenu: () => void }> = (props) => {
           {
             // renders list of 4 lists - one for each category
           }
-          <ul className="bg-white w-100 px-14 pb-4 pt-2 flex flex-col sm:grid sm:grid-cols-2 md:grid-cols-3">
+          <ul className="bg-white w-100 px-14 pb-4 pt-2 flex flex-row flex-wrap sm:grid sm:grid-cols-2 md:grid-cols-3">
             {links.map((item, index) => (
               <li
                 data-testid="link-category"
@@ -199,7 +199,7 @@ const Menu: React.FC<{ show: boolean; onToggleMenu: () => void }> = (props) => {
                 <ul className="pt-4 flex flex-col space-y-3">
                   {item.linksList.map((link, linkIndex) => {
                     return (
-                      <li data-testid="link" className="leading-5" key={`link${linkIndex}`}>
+                      <li data-testid="link" className="leading-5 max-w-[90%]" key={`link${linkIndex}`}>
                         <a className="text-gray-4" href={link.url}>
                           {link.name}
                         </a>
