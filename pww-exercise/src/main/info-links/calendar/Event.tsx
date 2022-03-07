@@ -99,7 +99,7 @@ const Event: React.FC<{
               alt="location icon"
               className="mr-2 mt-1 h-1/2"
             />
-            <div className="text-gray-2 leading-5">{props.location}</div>
+            <p className="text-gray-2 leading-4">{props.location}</p>
           </div>
           <div className="flex flex-row">
             <img src={clockIcon} alt="clock icon" className="mr-3" />
