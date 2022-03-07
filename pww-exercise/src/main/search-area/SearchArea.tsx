@@ -27,12 +27,17 @@ const SearchArea: React.FC = () => {
             data-testid="search-form"
             className="w-full sm:p-4 flex flex-col items-center sm:flex-row mt-4"
           >
+            <label className="hidden" htmlFor="main-search">
+              Search rfa.sc.gov
+            </label>
             <input
-              className="w-full mb-4 sm:w-3/4 sm:mr-2 sm:mb-0 p-3 placeholder-italic focus:outline-none"
+              id="main-search"
+              name="main-search"
+              className="w-full mb-4 focus:outline-1 focus:outline-gray-2 sm:w-3/4 sm:mr-2 sm:mb-0 p-3 placeholder-italic "
               type="search"
               placeholder="Search rfa.sc.gov"
             />
-            <Button>
+            <Button type="submit">
               SEARCH{" "}
               <img
                 data-testid="search-icon"
