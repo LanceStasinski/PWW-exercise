@@ -48,7 +48,7 @@ GitHub (currently private repo): [https://github.com/LanceStasinski/PWW-exercise
 - Uses icon SVGs from iconmonstr
 - Uses a file structure that separates the main sections of the page
 - Unit testing with Jest and React Testing Library
-- Passes Accessibility test on Google Lighthouse with 96% (remaining 4% is due to colors that don't have enough contrast and the colors were chosen by the designer)
+- Passes Accessibility test on Google Lighthouse with 98% - remaining 2% is due to colors that don't have enough contrast (colors were chosen by the designer)
 
 ## Features
 
