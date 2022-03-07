@@ -75,6 +75,7 @@ First, `cd` into the `pww-exercise` directory.
 
 - `yarn install` will install this project's dependencies
 - `yarn build` will create a production build of this project
+- `serve -s build` will serve the production build on port 5000
 - `yarn start` will start a development server for this project
 - `yarn test` will run tests with Jest
 
