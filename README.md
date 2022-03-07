@@ -79,6 +79,8 @@ First, `cd` into the `pww-exercise` directory.
 - `yarn start` will start a development server for this project
 - `yarn test` will run tests with Jest
 
+NOTE: `npm` can be used instead of `yarn`, and the `serve cli` may need to be installed before using the `serve` command.
+
 ## Challenges
 
 This was my first time using Tailwind CSS and it took a little while to get used to; however, I think this will be my go-to CSS framework for now on. It cuts down on the number of files I'm working with, and it's nice to have css and JSX code all in the same place.
