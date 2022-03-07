@@ -1,6 +1,6 @@
 # PWW-exercise
 
-A project built to demonstrate my ability to convert a design artifact into a functional web page.
+A landing page built to demonstrate my ability to convert a design artifact into a functional web page.
 
 ## Table of Contents
 
@@ -48,6 +48,7 @@ GitHub (currently private repo): [https://github.com/LanceStasinski/PWW-exercise
 - Uses icon SVGs from iconmonstr
 - Uses a file structure that separates the main sections of the page
 - Unit testing with Jest and React Testing Library
+- Passes Accessibility test on Google Lighthouse with 96% (remaining 4% is due to colors that don't have enough contrast and the colors were chosen by the designer)
 
 ## Features
 
@@ -101,7 +102,7 @@ There are many libraries to construct a web page with, but I chose to use React 
 - Writing documentation - 1.5 hours
 - Total - 29 hours
 
-I'm aware that I was allowed to submit this project in a partially completed state, but I had the time and I was excited to build a web page from an official design pattern and to use this opportunity to learn Tailwind CSS. If I had a limited time, I would have used a CSS method that I was already familiar with, and I would have practiced an Agile mindset by implementing the most valuable features. Typically, these features are decided in consultation with the customer, but my personal ranking of features, from most valuable to least, are:
+I'm aware that I was allowed to submit this project in a partially completed state, but I had the time and I was excited to build a web page from a professional design pattern and to use this opportunity to learn Tailwind CSS. If I was more limited time, I would have used a CSS method that I was already familiar with, and I would have practiced an Agile mindset by implementing the most valuable features. Typically, these features are decided in consultation with the customer, but my personal ranking of features, from most valuable to least, are:
 
 1. Header/navigation bar - this component will likely be used in other web pages and has links to other important pages
 2. The drop down menu - this component has links to many important resources that are not accessible from other links on the page
