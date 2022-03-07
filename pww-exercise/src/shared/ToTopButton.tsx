@@ -14,7 +14,7 @@ const ToTopButton: React.FC = () => {
       <button
         type="button"
         onClick={scrollToTop}
-        className="flex items-center text-gray-3"
+        className="flex items-center text-gray-3 hover:scale-105"
       >
         Back to Top{" "}
         <div className="rounded-full ml-3 bg-faded-blue flex justify-center items-center p-3">
