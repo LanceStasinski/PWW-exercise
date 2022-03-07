@@ -39,7 +39,7 @@ const RecentItem: React.FC<{
           {props.text}
         </p>
       )}
-      <div className="flex text-sm flex-wrap">
+      <div className="flex text-sm items-center flex-wrap">
         <div className="text-gray-3 font-medium mr-1">Published:</div>
         <time
           data-testid="publish-date"
@@ -50,7 +50,7 @@ const RecentItem: React.FC<{
         >{`${props.date.month} ${props.date.day}, ${props.date.year}`}</time>
         <div
           data-testid="update-tag"
-          className="text-gray-8 bg-gray-4 rounded-sm p-1 text-xs font-medium"
+          className="text-gray-8 bg-gray-4 rounded-sm p-1 text-xs"
         >
           {props.tag}
         </div>
