@@ -18,7 +18,7 @@ const SearchArea: React.FC = () => {
         <div className=" w-5/6 sm:w-1/2">
           <p
             data-testid="hero-text"
-            className="text-gray-8 text-center font-Roboto-Slab font-light text-xl"
+            className="text-gray-8 text-center font-Roboto-Slab font-light text-xl sm:text-2xl"
           >
             Providing independent research, analysis, and resources to
             facilitate informed policy decisions and administration of services
