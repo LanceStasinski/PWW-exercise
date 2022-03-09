@@ -14,6 +14,7 @@ A landing page built to demonstrate my ability to convert a design artifact into
 - [Challenges](#Challenges)
 - [Alternatives](#Alternatives)
 - [Time-Breakdown](#Time-Breakdown)
+- [License](#License)
 - [Acknowledgements](#Acknowledgements)
 
 ## Introduction
@@ -120,6 +121,10 @@ I'm aware that I was allowed to submit this project in a partially completed sta
 9. Recent updates - These updates are probably not the most important information for the average user
 10. The Scroll to Top button - this is a nice feature, but it is less valuable that providing access to necessary information
 11. Animations - animations make for a better user experience, but I don't think they are more important than providing access to information
+
+## License
+
+This project is licensed under the MIT License - [https://mit-license.org/](https://mit-license.org/)
 
 ## Acknowledgements
 
