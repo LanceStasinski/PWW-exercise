@@ -22,7 +22,8 @@ This web page is a fully styled and responsive landing page for the South Caroli
 
 ## Links
 
-GitHub (currently private repo): [https://github.com/LanceStasinski/PWW-exercise](https://github.com/LanceStasinski/PWW-exercise)
+- Deployed: [https://pww-exercise.web.app/](https://pww-exercise.web.app/)
+- GitHub: [https://github.com/LanceStasinski/PWW-exercise](https://github.com/LanceStasinski/PWW-exercise)
 
 ## Screenshots
 
@@ -103,7 +104,8 @@ There are many libraries to construct a web page with, but I chose to use React 
 - Adding the drop down features (menu and search bar) - 4 hours
 - Adding unit tests - 4.5 hours
 - Writing documentation - 1.5 hours
-- Total - 29 hours
+- Deployment - 0.25 hours
+- Total - 29.25 hours
 
 I'm aware that I was allowed to submit this project in a partially completed state, but I had the time and I was excited to build a web page from a professional design pattern and to use this opportunity to learn Tailwind CSS. If I was more limited time, I would have used a CSS method that I was already familiar with, and I would have practiced an Agile mindset by implementing the most valuable features. Typically, these features are decided in consultation with the customer, but my personal ranking of features, from most valuable to least, are:
 
