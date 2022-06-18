@@ -13,7 +13,6 @@ A landing page built to demonstrate my ability to convert a design artifact into
 - [Scripts](#Scripts)
 - [Challenges](#Challenges)
 - [Alternatives](#Alternatives)
-- [Time-Breakdown](#Time-Breakdown)
 - [License](#License)
 - [Acknowledgements](#Acknowledgements)
 
@@ -50,7 +49,7 @@ This web page is a fully styled and responsive landing page for the South Caroli
 - Uses icon SVGs from iconmonstr
 - Uses a file structure that separates the main sections of the page
 - Unit testing with Jest and React Testing Library
-- Passes Accessibility test on Google Lighthouse with 98% - remaining 2% is due to colors that don't have enough contrast (colors were chosen by the designer)
+- Passes Accessibility test on Google Lighthouse with 98%
 
 ## Features
 
@@ -98,29 +97,6 @@ Some other minor challenges were:
 ## Alternatives
 
 There are many libraries to construct a web page with, but I chose to use React due to my confortability with the library. I could have also used a different CSS setup (plain CSS, CSS modules, or styled-components), but I chose to use Tailwind CSS because I wanted to learn the framework and I liked how it reduced the file size and number of files. Finally, I could have created the icons using CSS, but it was more convenient to download SVGs, but this does slightly increase the size of the assets folder loaded by the browser.
-
-## Time-Breakdown
-
-- Building the main page minus the drop down features - 19 hours
-- Adding the drop down features (menu and search bar) - 4 hours
-- Adding unit tests - 4.5 hours
-- Writing documentation - 1.5 hours
-- Deployment - 0.25 hours
-- Total - 29.25 hours
-
-I'm aware that I was allowed to submit this project in a partially completed state, but I had the time and I was excited to build a web page from a professional design pattern and to use this opportunity to learn Tailwind CSS. If I was more limited time, I would have used a CSS method that I was already familiar with, and I would have practiced an Agile mindset by implementing the most valuable features. Typically, these features are decided in consultation with the customer, but my personal ranking of features, from most valuable to least, are:
-
-1. Header/navigation bar - this component will likely be used in other web pages and has links to other important pages
-2. The drop down menu - this component has links to many important resources that are not accessible from other links on the page
-3. The footer - this component is likely used in other pages and has important links and address information
-4. The search bar in the header - this is a reusable feature that can be used to navigate the site
-5. The list of the four major departments/programs in the organization - these may useful for a user to narrow down what they are looking for
-6. The Popular Services and Links section - these links could be valuable for quickly finding useful information
-7. The Calendar of Events section - some users may be interested in upcoming events, and may miss those events if they can't find event detials here
-8. The main hero section with the search bar - this adds a level of professionalism to the site and may make the user trust that they will have a modern web experience at the site; however, the user would already have access to the search feature from the search bar in the header
-9. Recent updates - These updates are probably not the most important information for the average user
-10. The Scroll to Top button - this is a nice feature, but it is less valuable that providing access to necessary information
-11. Animations - animations make for a better user experience, but I don't think they are more important than providing access to information
 
 ## License
 
